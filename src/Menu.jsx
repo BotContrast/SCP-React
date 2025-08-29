@@ -1,12 +1,17 @@
+import Button from 'react-bootstrap/Button';
+
 function Menu({scps, onSelect})
 {
     return(
-        <ul>
+        <ul style={{ display: 'flex', flexWrap: 'wrap', listStyleType: 'none', padding: 0 }}>
             {
                 scps.map(
                     (scp, index) => (
-                        <li key={index} onClick={()=>onSelect(scp)}>
-                            {scp.item}
+                        <li key={index} style={{ marginRight: '10px', cursor: 'pointer' }} onClick={()=>onSelect(scp)}>
+                            
+                            <Button variant='flat'>
+                                {scp.name}
+                            </Button>     
                         </li>
                     )
                 )
