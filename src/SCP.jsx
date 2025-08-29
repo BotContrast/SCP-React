@@ -15,7 +15,7 @@ function SCP({selectedSCP})
             {selectedSCP.image ? (
                 <img src={`/SCP-React/${selectedSCP.image}`} alt={selectedSCP.name} class="rounded mx-auto img-fluid d-block" />
             ) : (
-                <p class="text-center"><em>No image available</em></p>
+                <p class="text-center"><em>No image available for this SCP</em></p>
             )}
             <div class = "pt-2">
             <h3 class={classStyleAlert}>Object class: {selectedSCP.class}</h3>
