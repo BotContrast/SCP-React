@@ -13,7 +13,7 @@ function SCP({selectedSCP})
         <div>
             <h2 class="text-center">{selectedSCP.name}</h2>
             {selectedSCP.image ? (
-                <img src={`/${selectedSCP.image}`} alt={selectedSCP.name} class="rounded mx-auto img-fluid d-block" />
+                <img src={`/SCP-React/${selectedSCP.image}`} alt={selectedSCP.name} class="rounded mx-auto img-fluid d-block" />
             ) : (
                 <p class="text-center"><em>No image available</em></p>
             )}
